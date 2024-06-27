@@ -23,4 +23,11 @@ mixin ValidationsMixin {
     }
     return null;
   }
+
+  String? moreThanSeven(String? value, [String? menssage]) {
+    if ((value?.length ?? 0) < 8) {
+      return menssage ?? 'No mínimo 8 caracteres';
+    }
+    return null;
+  }
 }

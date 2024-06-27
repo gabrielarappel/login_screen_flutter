@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ColorTheme {
   static Color background = Colors.grey.shade800;
 
-   static LinearGradient linearGradient = LinearGradient(
+  static LinearGradient linearGradient = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     colors: [
@@ -12,10 +12,13 @@ class ColorTheme {
       Colors.orange[400] ?? Colors.orange
     ],
   );
+  static Color orange = Colors.orange;
+  static Color deepOrangeAccent = Colors.deepOrangeAccent;
 
   static Color white = Colors.white;
 
-  static Color grey = Color.fromARGB(255, 79, 79, 79);
-  
+  static Color greyField = const Color.fromARGB(255, 79, 79, 79);
+  static Color grey = Colors.grey;
 
+  static Color red = Colors.red;
 }
