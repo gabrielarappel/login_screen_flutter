@@ -62,6 +62,7 @@ class _LoginPageState extends State<LoginPage> with ValidationsMixin {
                   child: Column(
                     children: [
                       TextFormField(
+                        autovalidateMode: AutovalidateMode.onUserInteraction,
                         textAlign: TextAlign.justify,
                         decoration: InputDecoration(
                           filled: true,
@@ -112,6 +113,7 @@ class _LoginPageState extends State<LoginPage> with ValidationsMixin {
                           height:
                               responsiveUtils.getHeightSpacing(context, 20)),
                       TextFormField(
+                        autovalidateMode: AutovalidateMode.onUserInteraction,
                         decoration: InputDecoration(
                           filled: true,
                           fillColor: ColorTheme.greyField,
